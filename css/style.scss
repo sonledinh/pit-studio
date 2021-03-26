@@ -73,6 +73,8 @@ footer {
 }
 .header-top {
     padding: 60px 0;
+    position: relative;
+    z-index: 2;
 }
 .head-right {
     ul {
@@ -476,61 +478,295 @@ footer {
 }
 .title-main {
     h1 {
-        font-size: 58px;
+        font-size: 64px;
         font-weight: 700;
-        margin-bottom: 70px;
-    }
-}
-.list-form {
-}
-.item-form {
-    margin-bottom: 70px;
-    ul {
-        list-style: none;
-        li {
-            margin-bottom: 20px;
-            &:last-child {
-                margin-bottom: 0;
-            }
+        margin-bottom: 80px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 28px;
+            right: 0;
         }
     }
-    input[type="text"] {
-        font-size: 32px;
-        font-weight: 700;
-        border: 0;
-        border-bottom: 1px solid #000000;
-        width: 100%;
-        height: 40px;
-    }
-    textarea {
-        font-size: 32px;
-        font-weight: 700;
-        border: 0;
-        border-bottom: 1px solid #000000;
-        width: 100%;
-        height: 90px;
-        line-height: 1.2;
-        outline: none;
-    }
-    input[type="submit"] {
-        height: 98px;
-        background: #000000;
-        border-radius: 24px;
-        min-width: 295px;
-        color: #fff;
-        cursor: pointer;
-        font-size: 32px;
-        font-weight: 700;
-    }
 }
+
+.cb-input_light-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 59px;
+    width: 300%;
+    -webkit-transform: translateX(-66.66%);
+    -moz-transform: translateX(-66.66%);
+    -ms-transform: translateX(-66.66%);
+    -o-transform: translateX(-66.66%);
+    transform: translateX(-66.66%);
+    opacity: 0.1;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDYwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIGQ9Ik0wLDU2LjVjMCwwLDI5OC42NjYsMCwzOTkuMzMzLDBDNDQ4LjMzNiw1Ni41LDUxMy45OTQsNDYsNTk3LDQ2Yzc3LjMyNywwLDEzNSwxMC41LDIwMC45OTksMTAuNWM5NS45OTYsMCw0MDIuMDAxLDAsNDAyLjAwMSwwIj48L3BhdGg+PC9zdmc+);
+    background-position: center bottom;
+    pointer-events: none;
+    -webkit-transition: opacity 0.4s, -webkit-transform 0s cubic-bezier(0, 0.25, 0.5, 1);
+    transition: opacity 0.4s, -webkit-transform 0s cubic-bezier(0, 0.25, 0.5, 1);
+    -o-transition: opacity 0.4s, -o-transform 0s cubic-bezier(0, 0.25, 0.5, 1);
+    -moz-transition: transform 0s cubic-bezier(0, 0.25, 0.5, 1), opacity 0.4s, -moz-transform 0s cubic-bezier(0, 0.25, 0.5, 1);
+    transition: transform 0s cubic-bezier(0, 0.25, 0.5, 1), opacity 0.4s;
+    transition: transform 0s cubic-bezier(0, 0.25, 0.5, 1), opacity 0.4s, -webkit-transform 0s cubic-bezier(0, 0.25, 0.5, 1), -moz-transform 0s cubic-bezier(0, 0.25, 0.5, 1), -o-transform 0s cubic-bezier(0, 0.25, 0.5, 1);
+}
+.cb-input_light-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.cb-input_light-message {
+    margin: 15px 0 0 0;
+    color: #eb4242;
+    font-size: 16px;
+    line-height: 25px;
+}
+.cb-input_light-message:empty {
+    display: none;
+}
+.cb-input_light input,
+.cb-input_light textarea {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 1;
+    color: #000;
+    background: 0 0;
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    outline: 0;
+    resize: none;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 100%;
+    -webkit-transition: all 0.3s, height 0s;
+    -o-transition: all 0.3s, height 0s;
+    -moz-transition: all 0.3s, height 0s;
+    transition: all 0.3s, height 0s;
+}
+.cb-input_light input::-webkit-input-placeholder,
+.cb-input_light textarea::-webkit-input-placeholder {
+    color: #000000;
+    opacity: .5;
+    font-size: 30px;
+    font-weight: 700;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.cb-input_light input:-moz-placeholder,
+.cb-input_light textarea:-moz-placeholder {
+    color: #000000;
+    opacity: .5;
+    font-size: 30px;
+    font-weight: 700;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.cb-input_light input::-moz-placeholder,
+.cb-input_light textarea::-moz-placeholder {
+    color: #000000;
+    opacity: .5;
+    font-size: 30px;
+    font-weight: 700;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.cb-input_light input:-ms-input-placeholder,
+.cb-input_light textarea:-ms-input-placeholder {
+    color: #000000;
+    opacity: .5;
+    font-size: 30px;
+    font-weight: 700;
+    -ms-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.cb-input_light input::-ms-input-placeholder,
+.cb-input_light textarea::-ms-input-placeholder {
+    color: #000000;
+    opacity: .5;
+    font-size: 30px;
+    font-weight: 700;
+    -ms-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.cb-input_light input::placeholder,
+.cb-input_light textarea::placeholder {
+    color: #000000;
+    opacity: .5;
+    font-size: 30px;
+    font-weight: 700;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.cb-input_light input:hover + .cb-input_light-line,
+.cb-input_light textarea:hover + .cb-input_light-line {
+    opacity: 0.6;
+}
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ input.cb-checkbox_rounded-box::-webkit-input-placeholder,
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ textarea.cb-checkbox_rounded-box::-webkit-input-placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ input.cb-checkbox_rounded-box::-webkit-input-placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ textarea.cb-checkbox_rounded-box::-webkit-input-placeholder,
+.cb-input_light input:focus::-webkit-input-placeholder,
+.cb-input_light textarea:focus::-webkit-input-placeholder {
+    color: #b3b3b3;
+}
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ input.cb-checkbox_rounded-box:-moz-placeholder,
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ textarea.cb-checkbox_rounded-box:-moz-placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ input.cb-checkbox_rounded-box:-moz-placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ textarea.cb-checkbox_rounded-box:-moz-placeholder,
+.cb-input_light input:focus:-moz-placeholder,
+.cb-input_light textarea:focus:-moz-placeholder {
+    color: #b3b3b3;
+}
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ input.cb-checkbox_rounded-box::-moz-placeholder,
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ textarea.cb-checkbox_rounded-box::-moz-placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ input.cb-checkbox_rounded-box::-moz-placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ textarea.cb-checkbox_rounded-box::-moz-placeholder,
+.cb-input_light input:focus::-moz-placeholder,
+.cb-input_light textarea:focus::-moz-placeholder {
+    color: #b3b3b3;
+}
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ input.cb-checkbox_rounded-box:-ms-input-placeholder,
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ textarea.cb-checkbox_rounded-box:-ms-input-placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ input.cb-checkbox_rounded-box:-ms-input-placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ textarea.cb-checkbox_rounded-box:-ms-input-placeholder,
+.cb-input_light input:focus:-ms-input-placeholder,
+.cb-input_light textarea:focus:-ms-input-placeholder {
+    color: #b3b3b3;
+}
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ input.cb-checkbox_rounded-box::-ms-input-placeholder,
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ textarea.cb-checkbox_rounded-box::-ms-input-placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ input.cb-checkbox_rounded-box::-ms-input-placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ textarea.cb-checkbox_rounded-box::-ms-input-placeholder,
+.cb-input_light input:focus::-ms-input-placeholder,
+.cb-input_light textarea:focus::-ms-input-placeholder {
+    color: #b3b3b3;
+}
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ input.cb-checkbox_rounded-box::placeholder,
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ textarea.cb-checkbox_rounded-box::placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ input.cb-checkbox_rounded-box::placeholder,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ textarea.cb-checkbox_rounded-box::placeholder,
+.cb-input_light input:focus::placeholder,
+.cb-input_light textarea:focus::placeholder {
+    color: #b3b3b3;
+}
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ input.cb-checkbox_rounded-box + .cb-input_light-line,
+.cb-checkbox_rounded .cb-input_light label > input:focus ~ textarea.cb-checkbox_rounded-box + .cb-input_light-line,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ input.cb-checkbox_rounded-box + .cb-input_light-line,
+.cb-input_light .cb-checkbox_rounded label > input:focus ~ textarea.cb-checkbox_rounded-box + .cb-input_light-line,
+.cb-input_light input:focus + .cb-input_light-line,
+.cb-input_light textarea:focus + .cb-input_light-line {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-duration: 0.8s, 0.4s;
+    -moz-transition-duration: 0.8s, 0.4s;
+    -o-transition-duration: 0.8s, 0.4s;
+    transition-duration: 0.8s, 0.4s;
+}
+.cb-input_light input:invalid,
+.cb-input_light textarea:invalid {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+}
+.cb-input_light input:disabled,
+.cb-input_light textarea:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+.cb-input_light textarea {
+    height: 80px;
+}
+.cb-input_light textarea::placeholder {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.cb-form-group {
+    margin-bottom: 80px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .btn-form {
+        background: #000000;
+        color: #fff;
+        height: 95px;
+        min-width: 268px;
+        width: auto;
+        border-radius: 20px;
+        font-weight: 700;
+        letter-spacing: .5px;
+        cursor: pointer;
+        transition: .4s all;
+    }
+} 
 .title-form {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     span {
         display: block;
-        line-height: 1.2;
         font-size: 18px;
         opacity: .5;
+        padding: 10px 0;
+    }
+}
+.list-form {
+    padding-bottom: 150px;
+}
+.content-result {
+    max-width: 918px;
+    margin: 0 auto;
+}
+.result {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+.content-result {
+    .avarta {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        right: -90px;
+        margin-bottom: 75px;
+        .img-rel {
+            position: absolute;
+            left: -90px;
+            bottom: 0;
+        }
+    }
+    .desc {
+        p {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 60px;
+        }
+        a {
+            font-size: 32px;
+            font-weight: 700;
+            border-bottom: 1px solid #000000;
+        }
     }
 }

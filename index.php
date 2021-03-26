@@ -23,7 +23,7 @@
 									<div class="icon"><img src="images/icon-tab.svg" class="img-fluid" alt=""></div>
 									<div class="info">
 										<span>Level</span>
-										<label>Beginner</label>
+										<label>Beginner</label> 
 									</div>
 								</li>
 								<li class="tab-link" data-tab="tab-2">
@@ -230,7 +230,7 @@
 								</div>
 							</li>
 						</ul>
-						<div class="btn-regis"><a href="">Registration</a></div>
+						<div class="btn-regis"><a href="form-pit.php">Registration</a></div>
 						<div class="info-bott">
 							<h3>Only 6 slots in this program</h3>
 							<p>Registration stops on March 13, 2021. We will contact candidates to do some mandatory interview procedures for the selection of the 6 best matches for this program.</p>

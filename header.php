@@ -20,7 +20,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <div class="logo"><a href=""><img src="images/logo.svg" class="img-fluid" alt=""></a></div>
+                        <div class="logo"><a href="index.php"><img src="images/logo.svg" class="img-fluid" alt=""></a></div>
                     </div> 
                     <div class="col-md-8"> 
                         <div class="head-right">
@@ -40,4 +40,4 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> 
