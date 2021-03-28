@@ -1,8 +1,8 @@
 
 $(document).ready(function(){
-	$('.head-tabs li').click(function(){
+	$('.clc-tab').click(function(){
 		var tab_id = $(this).attr('data-tab');
-		$('.head-tabs li').removeClass('active');
+		$('.clc-tab').removeClass('active');
 		$('.tab-content').removeClass('active');
 		$(this).addClass('active');
 		$("#"+tab_id).addClass('active');

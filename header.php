@@ -20,21 +20,16 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <div class="logo"><a href="index.php"><img src="images/logo.svg" class="img-fluid" alt=""></a></div>
+                        <div class="logo"><a href="index.php"><img src="images/logo.png" class="img-fluid" alt=""></a></div>
                     </div> 
                     <div class="col-md-8"> 
-                        <div class="head-right">
-                            <ul class="list-inline">
-                                <li class="list-inline-item">14 days left to apply <a href="">Apply</a></li>
-                                <li class="list-inline-item">
-                                    <div class="translate">
-                                        <select name="" id="">
-                                            <option value="">Vie</option>
-                                            <option value="">Eng</option>
-                                        </select>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="head-right text-right">
+                            <div class="translate">
+                                <ul>
+                                    <li><a href="javascript:void(0)" class="active">EN</a></li>
+                                    <li><a href="javascript:void(0)">VI</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
