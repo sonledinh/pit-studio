@@ -510,6 +510,10 @@ body img {
   max-width: 100%;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .header-top {
   padding: 15px 0;
   position: fixed;
