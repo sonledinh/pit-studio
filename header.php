@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PIT STUDIO</title>
     <!--link css-->
+    <link rel="stylesheet" type="text/css" title="" href="http://tpl.gco.vn/sukienthanh/css/animate.css">
     <link rel="stylesheet" type="text/css" title="" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" title="" href="css/slick.min.css">
     <link rel="stylesheet" type="text/css" title="" href="css/slick-theme.min.css">
@@ -19,10 +20,10 @@
         <div class="header-top">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-6">
                         <div class="logo"><a href="index.php"><img src="images/logo.png" class="img-fluid" alt=""></a></div>
                     </div> 
-                    <div class="col-md-8"> 
+                    <div class="col-md-8 col-6"> 
                         <div class="head-right text-right">
                             <div class="translate">
                                 <ul>
