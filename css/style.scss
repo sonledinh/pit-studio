@@ -240,10 +240,10 @@ html {
         z-index: 1;
     }
     .flow-1 {
-        left: -200px;
+        left: 0;
     }
     .flow-2 {
-        right: -180px;
+        right: 0;
     }
 }
 .title {
@@ -489,19 +489,87 @@ html {
         }
     }
 }
-.btn-start {
-    a {
-        color: #fff;
-        font-size: 24px;
-        font-weight: 700;
-        background: #11AF88;
-        border-radius: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 72px;
-    }
-}
+// .btn-start {
+//     a {
+//         color: #fff;
+//         font-size: 24px;
+//         font-weight: 700;
+//         background: #11AF88;
+//         border-radius: 12px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         height: 72px;
+//         overflow: hidden;
+//         position: relative;
+//         transition-duration: 0.3s;
+//         &:hover {
+//             color: #11AF88;
+//             span {
+//                 width: 300px;
+//                 height: 300px;
+//                 opacity: 1;
+//             }
+//         }
+//         span {
+//             content: "";
+//             border-radius: 50%;
+//             width: 0px;
+//             height: 0px; 
+//             transform: translate(-50%, -50%);
+//             transition: height 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.1s;
+//             background: red;
+//             position: absolute;
+//             z-index: -1;
+//             opacity: 1;
+//         }
+//     }
+// }
 .form-studio {
     padding-top: 200px;
 }
+
+.link-inter {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    background: #11AF88;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 0.3s;
+    z-index: 1001;
+    label {
+        cursor: pointer;
+        z-index: 10;
+    }
+}
+
+.link-inter:hover {
+    color: #11af88;
+}
+
+.link-inter span {
+    content: "";
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%, -50%);
+    transition: height 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.1s;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+}
+
+.link-inter:hover span {
+    width: 1400px;
+    height: 1400px;
+    opacity: 1;
+    opacity: 1;
+}
+

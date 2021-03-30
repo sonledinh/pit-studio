@@ -33,3 +33,21 @@ $(window).scroll(function(event){
    }
    lastScrollTop = st;
 });
+
+
+$(document).ready(function() {
+  $(document).on("mousemove", function(event) {
+    var mouseX = event.pageX,
+        mouseY = event.pageY
+  });
+  $(".link-inter").on("mousemove", function(event) {
+    var offset = $( this ).offset();
+    var mouseX = event.pageX - offset.left,
+        mouseY = event.pageY - offset.top   
+    $(".link-inter span").css({
+      "left": mouseX,
+      "top": mouseY
+    });
+  });
+});
+ 

@@ -297,7 +297,8 @@
 							</ul>
 						</div>
 						<div class="btn-start text-center">
-							<a href="form-pit.php">Start the Journey</a>
+							<!-- <a href="" class="hver-inter"> <span></span></a>  -->
+							<a href="form-pit.php" id="btn" class="link-inter"><label>Start the Journey</label><span></span></a>
 						</div>
 					</div> 
 				</div>
@@ -306,9 +307,9 @@
 	</section>
 </main>
 <script type="text/javascript" src="https://kenh14cdn.com/2020/9/8/Magazine/eMag-Dutch20200908060511/js/TweenMax.min.js"></script>
-<!-- <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/ScrollMagic.js"></script>  -->
-<!-- <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/animation.gsap.min.js"></script>  -->
-<!-- <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/debug.addIndicators.js"></script>  -->
+<script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/ScrollMagic.js"></script>  
+<script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/animation.gsap.min.js"></script>  
+<script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/debug.addIndicators.js"></script>  
 <script>
 	
 	var rect = $('.box-banner')[0].getBoundingClientRect();
@@ -342,6 +343,18 @@
 	$(window).on('resize scroll', function(){
 	  rect = $('.box-banner')[0].getBoundingClientRect();
 	})
+
+
+
+	var controller = new ScrollMagic.Controller();
+	var scene = new ScrollMagic.Scene({
+		duration: 1000 
+	})
+	.setTween(".abs-flow .flow-2", {x: "+=200px"})   
+	// .setTween(".abs-flow .flow-1", {x: "-=200px"})  
+	.addTo(controller);
+
+
 
 </script>
 <?php include 'footer.php';?>     
