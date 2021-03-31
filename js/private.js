@@ -7,9 +7,13 @@ $(document).ready(function(){
 		$(this).addClass('active');
 		$("#"+tab_id).addClass('active');
 	})
+
+  $('.translate a').click(function(){
+    $('.translate ul').addClass('active');
+  })
 })
 
-
+ 
 
 
 // var eff_1 = new TimelineMax({ delay: 0.35 });

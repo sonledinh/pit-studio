@@ -18,7 +18,7 @@ body {
         transition: .3s all;  
         margin-bottom: 0;  
         outline: none !important;  
-    }    
+    }     
     a { 
         transition: .3s all !important;  
         color: #000000;
@@ -76,11 +76,29 @@ html {
         list-style: none;
         padding: 4px;
         border-radius: 30px;
+        position: relative;
         li {
            margin-right: 2px;
            &:last-child {
             margin-right: 0;
            } 
+        }
+        &:after {
+            content: "";
+            width: 28px;
+            height: 28px;
+            background: #CDFBDE;
+            border-radius: 100%;
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            z-index: 1;
+            transition: .4s all !important;
+        }
+        &.active {
+            &:after {
+                left: 35px;
+            }
         }
     }
     a {
@@ -93,8 +111,10 @@ html {
         width: 28px;
         height: 28px;
         border-radius: 100%;
+        position: relative;
+        z-index: 2;
         &.active, &:hover {
-            background: #CDFBDE;
+            // background: #CDFBDE; 
             color: #034853;
         }
     }
@@ -161,7 +181,7 @@ html {
     .tree-2 {
         position: absolute;
         right: 0;
-        top: -370px;
+        top: -340px;
         z-index: 2;
         transform: rotate(-3deg);
     }
@@ -213,6 +233,7 @@ html {
     border-radius: 24px;
     position: relative;
     z-index: 2;
+    min-height: 455px;
 }
 .about-right {
     max-width: 720px;
@@ -283,7 +304,7 @@ html {
         position: relative;
         &:after {
             content: "";
-            width: 144px;
+            width: 100%;
             height: 4px;
             border-radius: 42px;
             background: #11AF88;
@@ -498,6 +519,17 @@ html {
         }
         label, span {
             color: #fff !important;
+        }
+        li {
+            &:after {
+                display: none;
+            }
+            span, label {
+                color: #fff !important;
+            }
+            .icon {
+                background: #696E78 !important;
+            }
         }
     }
 }
