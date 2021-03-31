@@ -135,7 +135,11 @@
 				<div class="row">
 					<div class="col-md-4 col-sm-6 wow fadeInUp wHighlight" data-wow-delay=".25s">
 						<div class="item-discover">
-							<div class="avarta"><img src="images/cover-1.png" class="img-fluid w-100" alt=""></div>
+							<div class="avarta">
+								<img src="images/cover-1.png" class="img-fluid w-100" alt="">
+								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    			<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_mycwa1cu.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+							</div>
 							<div class="info">
 								<h3>Fundamental</h3>
 								<div class="desc">Learn the fundamental theory behind creating great animated loops</div>
@@ -144,7 +148,11 @@
 					</div>
 					<div class="col-md-4 col-sm-6 wow fadeInUp wHighlight" data-wow-delay=".35s">
 						<div class="item-discover">
-							<div class="avarta"><img src="images/cover-2.png" class="img-fluid w-100" alt=""></div>
+							<div class="avarta">
+								<img src="images/cover-2.png" class="img-fluid w-100" alt="">
+								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+								<lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_kexhrocp.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+							</div>
 							<div class="info">
 								<h3>Color</h3>
 								<div class="desc">Learn the fundamental theory</div>
@@ -153,7 +161,11 @@
 					</div>
 					<div class="col-md-4 col-sm-6 wow fadeInUp wHighlight" data-wow-delay=".45s">
 						<div class="item-discover">
-							<div class="avarta"><img src="images/cover-3.png" class="img-fluid w-100" alt=""></div>
+							<div class="avarta">
+								<img src="images/cover-3.png" class="img-fluid w-100" alt="">
+								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+								<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_hiveeozs.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+							</div>
 							<div class="info">
 								<h3>Typography</h3>
 								<div class="desc">Learn the fundamental theory behind creating great animated loops</div>
@@ -162,7 +174,11 @@
 					</div>
 					<div class="col-md-4 col-sm-6 wow fadeInUp wHighlight" data-wow-delay=".55s">
 						<div class="item-discover">
-							<div class="avarta"><img src="images/cover-4.png" class="img-fluid w-100" alt=""></div>
+							<div class="avarta">
+								<img src="images/cover-4.png" class="img-fluid w-100" alt="">
+								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+								<lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_qkdrn97x.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+							</div>
 							<div class="info">
 								<h3>UI Component</h3>
 								<div class="desc">Learn the fundamental theory behind creating great animated loops</div>
@@ -171,7 +187,11 @@
 					</div>
 					<div class="col-md-4 col-sm-6 wow fadeInUp wHighlight" data-wow-delay=".65s">
 						<div class="item-discover">
-							<div class="avarta"><img src="images/cover-5.png" class="img-fluid w-100" alt=""></div>
+							<div class="avarta">
+								<img src="images/cover-5.png" class="img-fluid w-100" alt="">
+								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+								<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_8ggdhelc.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+							</div>
 							<div class="info">
 								<h3>Digital Pattern</h3>
 								<div class="desc">Learn the fundamental theory behind creating great animated loops</div>
@@ -180,7 +200,11 @@
 					</div>
 					<div class="col-md-4 col-sm-6 wow fadeInUp wHighlight" data-wow-delay=".75s">
 						<div class="item-discover">
-							<div class="avarta"><img src="images/cover-6.png" class="img-fluid w-100" alt=""></div>
+							<div class="avarta">
+								<img src="images/cover-6.png" class="img-fluid w-100" alt="">
+								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+								<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_jxuca3qn.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+							</div>
 							<div class="info">
 								<h3>Communicating Design</h3>
 								<div class="desc">Learn the fundamental theory behind creating great animated loops</div>
@@ -192,6 +216,11 @@
 			<div class="slot-cover text-center wow fadeInUp wHighlight" data-wow-delay=".25s">
 				<a href="javascript:void(0)">+ lots of soft skills and engaging <br>sharing sessions</a>
 			</div>
+
+			<!-- <div class="test mt-3">
+				<script
+                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player  src="https://assets7.lottiefiles.com/private_files/lf30_mycwa1cu.json" background="transparent" speed="1" style="width: 353px; height: 281px;background: red;" loop autoplay></lottie-player>
+			</div> -->
 		</div>
 	</section>
 	<section class="box-intro">
@@ -306,6 +335,7 @@
 		</div>
 	</section>
 </main>
+
 <script type="text/javascript" src="https://kenh14cdn.com/2020/9/8/Magazine/eMag-Dutch20200908060511/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/ScrollMagic.js"></script>  
 <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/animation.gsap.min.js"></script>  
@@ -353,6 +383,14 @@
 	.setTween(".abs-flow .flow-2", {x: "+=200px"})   
 	// .setTween(".abs-flow .flow-1", {x: "-=200px"})  
 	.addTo(controller);
+
+
+	var controller_1 = new ScrollMagic.Controller();
+	var scene = new ScrollMagic.Scene({
+		duration: 1000 
+	}) 
+	.setTween(".abs-flow .flow-1", {x: "-=200px"})   
+	.addTo(controller_1);
 
 
 

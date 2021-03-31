@@ -211,6 +211,17 @@
     .box-banner .caption {
         padding-top: 30%;
     }
+    .item-discover .avarta img {
+        opacity: 0;
+        display: none;
+    }
+    .item-discover .avarta lottie-player {
+        width: 100% !important;
+    }
+    .item-discover .avarta lottie-player {
+        top: -3px;
+        position: relative;
+    }
 }
 @media (max-width: 575px) {
     .fter-top .txt.text-right {

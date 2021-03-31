@@ -58,7 +58,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgb(255 255 255 / 50%);
+    // background: rgb(255 255 255 / 50%); 
     transition: .4s all;
     // &.fixed {
     //     transition: .4s all;
@@ -354,11 +354,23 @@ html {
     overflow: hidden;
     .avarta {
         overflow: hidden;
+        position: relative;
+        border-radius: 16px 16px 0 0; 
         img {
             transition: .6s all !important;
+            position: relative;
+            z-index: 2;
+            // opacity: 0;  
             &:hover {
-                transform: scale(1.06);
+                // transform: scale(1.06); 
+                opacity: 0;
             }
+        }
+        lottie-player {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 16px 16px 0 0;
         }
     }
     .info {
