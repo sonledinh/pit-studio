@@ -122,6 +122,10 @@
         border-top: 1px solid #E7E8E9;
     }
 
+    .content-fppter a {
+        color: #222222 !important;
+    }
+
     footer {
         color: #222222;
         background: #fff;

@@ -1,5 +1,5 @@
 <?php include 'header.php';?>
-<main>
+<main class="scroll-page">
 	<section class="box-banner">
 		<div class="avarta">
 			<img src="images/bn-mobile.png" class="img-fluid bn-mobile" alt="" style="display: none;">
@@ -25,7 +25,8 @@
 		</div>
 	</section>
 
-	<section class="box-about">
+	<!-- <section class="box-about rellax" data-rellax-speed="8"> -->
+	<section class="box-about rellax" data-rellax-speed="8"> 
 		<div class="tree">
 			<img src="images/tree-1.png" class="img-fluid tree-1" alt="">
 			<img src="images/tree-2.png" class="img-fluid tree-2" alt="">
@@ -137,8 +138,8 @@
 						<div class="item-discover">
 							<div class="avarta">
 								<img src="images/cover-1.png" class="img-fluid w-100" alt="">
-								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    			<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_mycwa1cu.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+								
+								<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_h60qdvfk.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
 								<h3>Fundamental</h3>
@@ -150,8 +151,8 @@
 						<div class="item-discover">
 							<div class="avarta">
 								<img src="images/cover-2.png" class="img-fluid w-100" alt="">
-								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-								<lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_kexhrocp.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+								<!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>  -->
+								<lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_2umg0vk8.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
 								<h3>Color</h3>
@@ -163,8 +164,8 @@
 						<div class="item-discover">
 							<div class="avarta">
 								<img src="images/cover-3.png" class="img-fluid w-100" alt="">
-								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-								<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_hiveeozs.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+								<!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>  -->
+								<lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_vakhlesh.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
 								<h3>Typography</h3>
@@ -176,8 +177,8 @@
 						<div class="item-discover">
 							<div class="avarta">
 								<img src="images/cover-4.png" class="img-fluid w-100" alt="">
-								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-								<lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_qkdrn97x.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+								<!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+								<lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_mvwhjrfk.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
 								<h3>UI Component</h3>
@@ -189,8 +190,7 @@
 						<div class="item-discover">
 							<div class="avarta">
 								<img src="images/cover-5.png" class="img-fluid w-100" alt="">
-								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-								<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_8ggdhelc.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+								<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_go5fexjd.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
 								<h3>Digital Pattern</h3>
@@ -202,8 +202,7 @@
 						<div class="item-discover">
 							<div class="avarta">
 								<img src="images/cover-6.png" class="img-fluid w-100" alt="">
-								<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-								<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_jxuca3qn.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
+								<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_eeh3nivz.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
 								<h3>Communicating Design</h3>
@@ -383,7 +382,6 @@
 		duration: 1000 
 	})
 	.setTween(".abs-flow .flow-2", {x: "+=200px"})   
-	// .setTween(".abs-flow .flow-1", {x: "-=200px"})  
 	.addTo(controller);
 
 
@@ -394,6 +392,20 @@
 	.setTween(".abs-flow .flow-1", {x: "-=200px"})   
 	.addTo(controller_1);
 
+
+	$(function() {
+	  var controller_scroll = new ScrollMagic.Controller({
+	    container: 'main'
+	  });
+	  
+	  var scene = new ScrollMagic.Scene({
+	    triggerElement: '.box-about',
+	    duration: "200%",
+	    triggerHook: 1   
+	  })
+	  .setTween('.tree', {y: "80%", ease: Linear.easeNone})
+	  .addTo(controller_scroll);
+	})
 
 
 </script>

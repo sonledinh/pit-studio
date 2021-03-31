@@ -12,7 +12,7 @@ body {
     position: relative;
     font-weight: 400;
     font-family: 'Averta';
-    overflow-x: hidden;
+    overflow-x: hidden; 
     h1, h2, h3, h4, h5, h6, p, label, ul, li, .card, a { 
         text-decoration: none !important;       
         transition: .3s all;  
@@ -49,7 +49,11 @@ body {
     } 
 } 
 html {
-    overflow-x: hidden;
+    overflow: hidden;
+    &.un-hidd {
+        overflow: auto;
+        overflow-x: hidden;
+    }
 }
 .header-top {
     padding: 15px 0;
@@ -60,10 +64,10 @@ html {
     width: 100%;
     // background: rgb(255 255 255 / 50%); 
     transition: .4s all;
-    // &.fixed {
-    //     transition: .4s all;
-    //     padding: 15px 0;
-    // }
+    &.fixed {
+        background: #fff;
+        box-shadow: 0px 4px 16px rgb(0 0 0 / 5%);
+    }
     &.up-menu {
         top: -66px;
     }
@@ -113,9 +117,11 @@ html {
         border-radius: 100%;
         position: relative;
         z-index: 2;
-        &.active, &:hover {
+        // pointer-events: unset; 
+        &.active {
             // background: #CDFBDE; 
             color: #034853;
+            pointer-events: none;
         }
     }
 } 
@@ -169,6 +175,7 @@ html {
     background-size: cover;
     padding: 65px 0;
     position: relative;
+    z-index: 3;
 }
 
 .tree {
@@ -373,6 +380,11 @@ html {
     color: #101725;
     height: 100%;
     overflow: hidden;
+    &:hover {
+        img {
+            opacity: 0;
+        }
+    }
     .avarta {
         overflow: hidden;
         position: relative;
@@ -617,3 +629,20 @@ html {
     opacity: 1;
 }
 
+.loading-svg {
+    position: fixed;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    transition: .3s all !important;
+    &.hide-load {
+        opacity: 0; 
+        pointer-events: none; 
+    }
+}
