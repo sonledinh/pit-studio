@@ -56,7 +56,30 @@ var languages = {
         "levelUpQuickly": "⭐️ Level up quickly",
         "beInvolvedInRealProjects": "⭐️ Be involved in real projects",
         "opportunityToBecome": "⭐️ Opportunity to become a Member of Pit",
-        "pitInternshipJourney2021": "Pit Internship Journey 2021"
+        "pitInternshipJourney2021": "Pit Internship Journey 2021",
+        "hiPlease": "Hi there, please",
+        "introduceYourselfABit": "introduce yourself a bit ",
+        "personalInformation": "Personal information",
+        "yourName": "Your name",
+        "yearOfBirth": "Year of birth",
+        "yourSchool": "Your school/work place",
+        "designCoursesEach": "Design courses each participated (optional)",
+        "contactInformation": "Contact information",
+        "yourEmail": "Your email",
+        "yourPhoneNumber": "Your phone number",
+        "yourfacebookLink": "Your Facebook link",
+        "orBehanceLink": "Or Behance link",
+        "yourCreation": "Your creation",
+        "summarizeAnyOf": "Summarize any of your best design experiences here",
+        "yourPortfolioLink": "Your portfolio link",
+        "doYouHaveAnyMessages": "Do you have any messages for Pit?",
+        "weAreReadyToListen": "We are ready to listen to any questions you may have (optional)",
+        "submitYourProfile": "Submit your profile",
+        "thankYouFor": "Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên hệ",
+        "getBackTo": "lại với bạn trong thời gian sớm nhất!",
+        "thankYouFor": "Thank you for your registration, we will",
+        "getBackTo": "get back to you as soon as possible!",
+        "productBy": "See our work"
     },
     'vi': {
         'welcomeToPtiIntern' : 'Khám phá hành trình thực tập 2021',
@@ -115,7 +138,28 @@ var languages = {
         "levelUpQuickly": "⭐️ Nâng cấp trình độ nhanh chóng",
         "beInvolvedInRealProjects": "⭐️ Được tham gia các dự án thực tế",
         "opportunityToBecome": "⭐️ Cơ hội trở thành Thành viên của Pit Studio",
-        "pitInternshipJourney2021": "Hành trình thực tập 2021"
+        "pitInternshipJourney2021": "Hành trình thực tập 2021",
+        "hiPlease": "Xin chào, hãy giới thiệu",
+        "introduceYourselfABit": "vài điều về bản thân ",
+        "personalInformation": "Thông tin cá nhân",
+        "yourName": "Họ và tên",
+        "yearOfBirth": "Năm sinh",
+        "yourSchool": "Trường học/ Nơi làm việc",
+        "designCoursesEach": "Khoá học thiết kế từng tham gia (không bắt buộc)",
+        "contactInformation": "Thông tin liên hệ",
+        "yourEmail": "Địa chỉ email",
+        "yourPhoneNumber": "Số điện thoại",
+        "yourfacebookLink": "Đường dẫn Facebook",
+        "orBehanceLink": "Or Behance link",
+        "yourCreation": "Thiết kế của bạn",
+        "summarizeAnyOf": "Tổng hợp bất cứ bản thiết kế nào của bản thân mà bạn cảm thấy nó thú vị",
+        "yourPortfolioLink": "Đường dẫn sản phẩm của bạn",
+        "doYouHaveAnyMessages": "Bạn có muốn nhắn nhủ gì với Pit?",
+        "weAreReadyToListen": "Hãy chia sẻ với chúng tôi bất cứ thắc mắc hoặc câu chuyện nào của bạn (không bắt buộc)",
+        "submitYourProfile": "Gửi hồ sơ",
+        "thankYouFor": "Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên hệ",
+        "getBackTo": "lại với bạn trong thời gian sớm nhất!",
+        "productBy": "Sản phẩm của Pit"
     }
 }
 
@@ -133,7 +177,12 @@ $(document).ready(function() {
     setCookie( 'lang', lang, 10000 );
 
     $(".lang").each(function(index, element) {
-      $(this).text(languages[lang][$(this).attr("key")]);
+        if ($(this).is( "textarea" ) || $(this).is( "input" )) {
+            $(this).attr('placeholder',languages[lang][$(this).data("translate")])
+        } else {
+            $(this).text(languages[lang][$(this).attr("key")]);
+        }
+
     });
   });
 
