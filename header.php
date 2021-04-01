@@ -48,8 +48,8 @@
                         <div class="head-right text-right">
                             <div class="translate">
                                 <ul>
-                                    <li><a href="javascript:void(0)" class="active">EN</a></li>
-                                    <li><a href="javascript:void(0)">VI</a></li>
+                                    <li><a href="javascript:void(0)" class="active" id="en-US">EN</a></li>
+                                    <li><a href="javascript:void(0)" id="vi">VI</a></li>
                                 </ul>
                             </div>
                         </div>

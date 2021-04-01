@@ -13,13 +13,13 @@
 		</div>
 		<div class="caption">
 			<div class="container">
-				<h1 class="wow fadeInUp wHighlight" data-wow-delay=".25s">Welcome to Pit Internship Journey 2021</h1>
+				<h1 class="wow fadeInUp wHighlight lang" data-wow-delay=".25s" key="welcomeToPtiIntern">Welcome to Pit Internship Journey 2021</h1>
 				<div class="btn-apply wow fadeInUp wHighlight" data-wow-delay=".45s"><a href="form-pit.php">
 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<circle cx="24" cy="24" r="24" fill="#11AF88"/>
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M15.6 25.2H29.838L25.4784 30.432C25.0536 30.9408 25.1232 31.698 25.632 32.1216C26.142 32.5464 26.898 32.4768 27.3228 31.968L33.3228 24.768C33.3696 24.7116 33.3924 24.6456 33.4272 24.5832C33.456 24.5328 33.4908 24.4896 33.5124 24.4344C33.5664 24.2964 33.5988 24.1512 33.5988 24.0048C33.5988 24.0036 33.6 24.0012 33.6 24C33.6 23.9988 33.5988 23.9964 33.5988 23.9952C33.5988 23.8488 33.5664 23.7036 33.5124 23.5656C33.4908 23.5104 33.456 23.4672 33.4272 23.4168C33.3924 23.3544 33.3696 23.2884 33.3228 23.232L27.3228 16.032C27.084 15.7476 26.7432 15.6 26.4 15.6C26.1288 15.6 25.8564 15.6912 25.632 15.8784C25.1232 16.302 25.0536 17.0592 25.4784 17.568L29.838 22.8H15.6C14.9376 22.8 14.4 23.3376 14.4 24C14.4 24.6624 14.9376 25.2 15.6 25.2Z" fill="white"/>
 					</svg>
-					<span>Apply now</span>
+					<span class="lang" key="applyNow">Apply now</span>
 				</a></div>
 			</div>
 		</div>
@@ -37,7 +37,7 @@
 			 	<div class="tab-about">
 		 			<div class="txt-about">
 		 				<div class="title text-center">
-		 					<h2>What is this program about?</h2>
+		 					<h2 class="lang" key="whatIsThisJourney">What is this Journey about?</h2>
 		 				</div>
 		 				<div class="scroll-mb">
 			 				<ul class="head-tabs">
@@ -50,8 +50,8 @@
 										</svg>
 									</div>
 									<div class="info">
-										<span>Level</span>
-										<label>Beginner</label> 
+										<span class="lang" key="level">Level</span>
+										<label class="lang" key="beginner">Beginner</label> 
 									</div>
 								</li>
 								<li class="tab-link clc-tab" data-tab="tab-2">
@@ -63,8 +63,8 @@
 										</svg>
 									</div>
 									<div class="info">
-										<span>Format</span>
-										<label>Offline_2 months</label>
+										<span class="lang" key="format">Format</span>
+										<label class="lang" key="offline2Months">Offline 2 months</label>
 									</div>
 								</li>
 								<li class="tab-link clc-tab" data-tab="tab-3">
@@ -76,8 +76,8 @@
 
 									</div>
 									<div class="info">
-										<span>Required </span>
-										<label>Laptop</label>
+										<span class="lang" key="required">Required </span>
+										<label class="lang" key="laptop">Laptop</label>
 									</div>
 								</li>
 							</ul>
@@ -85,8 +85,9 @@
 		 			</div>
 		 			<div class="box-tabs">
 						<div id="tab-1" class="tab-content active">
-							<div class="desc">
-								If you love motion design and don't live on another planet, there is a good chance that you know Emanuele Colombo's work. Fluid movements, superb character animation, unexpected transitions, groundbreaking animation techniques and a strong sense of storytelling are some of the traits that made Emanuele one of the giants of the community, and many of his works are real milestones of motion design history.
+							<div class="desc lang" key="the2021InternProgram">
+								The 2021 intern program at Pit Studio is organized to help you orient your career in UX/UI design, get a methodical and practical view in this field. The journey will be performed in two months with many training activities, skills support and attractive sharing sessions.
+								We will make a qualifying application, hold interviews to select 6 MATCHES PEOPLE to join the program.
 							</div>
 						</div>
 						<div id="tab-2" class="tab-content">
@@ -94,16 +95,16 @@
 								<ul>
 
 									<li>
-										<label>🕒 The journey lasts in:</label>
-										<span>2 months</span>
+										<label class="lang" key="time">🕒 Time:</label>
+										<span class="lang" key="2Months">2 months</span>
 									</li>
 									<li>
-										<label>💼 Hình thức tham gia:</label>
-										<span>Toàn thời gian (ưu tiên)/ Bán thời gian</span>
+										<label class="lang" key="formatC">💼 Format:</label>
+										<span class="lang" key="fullTimeOrPartTime">Full time (priority)/ Part time</span>
 									</li>
 									<li>
-										<label>🏛 Địa chỉ thực tập:</label>
-										<span>Toà Roman Plaza, Tố Hữu, Hà Đông</span>
+										<label class="lang" key="Address">🏛 Address:</label>
+										<span class="lang" key="location">Roman Plaza Tower, To Huu Street, Ha Dong, Ha Noi</span>
 									</li>
 								</ul>
 							</div>
@@ -111,9 +112,9 @@
 						<div id="tab-3" class="tab-content">
 							<div class="desc text-center">
 								<ul>
-									<li><label>You need to bring:</label></li>
-									<li>💻 A personal computers &</li>
-									<li>🌻 A beautiful soul</li>
+									<li><label class="lang" key="youNeedToBring">You need to bring:</label></li>
+									<li class="lang" key="aPersonalComputer">💻 A personal computers &</li>
+									<li class="lang" key="aBeautifulSoul">🌻 A beautiful soul</li>
 								</ul>
 							</div>
 						</div>
@@ -129,8 +130,8 @@
 	<section class="box-discover">
 		<div class="container">
 			<div class="title text-center">
-				<h3 class="wow fadeInUp wHighlight" data-wow-delay=".25s">JOURNEY CURRICULUM</h3>
-				<h2 class="wow fadeInUp wHighlight" data-wow-delay=".25s">What will you discover in <br> Pit Internship Journey 2021?</h2>
+				<h3 class="wow fadeInUp wHighlight lang" data-wow-delay=".25s" key="journeyCurriculum">JOURNEY CURRICULUM</h3>
+				<h2 class="wow fadeInUp wHighlight" data-wow-delay=".25s" ><span class="lang" key="WhatWillYouDiscoverIn">What will you discover in</span><br> <span class="lang" key="pitInternshipJourney2021?">Pit Internship Journey 2021?</span></h2>
 			</div>
 			<div class="list-discover">
 				<div class="row">
@@ -142,8 +143,8 @@
 								<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_h60qdvfk.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
-								<h3>Fundamental</h3>
-								<div class="desc">Learn the fundamental theory behind creating great animated loops</div>
+								<h3 class="lang" key="fundamental">Fundamental</h3>
+								<div class="desc lang" key="generalIntroductionAboutInternship">General introduction about internship programs, industry overview</div>
 							</div>
 						</div>
 					</div>
@@ -155,8 +156,8 @@
 								<lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_2umg0vk8.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
-								<h3>Color</h3>
-								<div class="desc">Learn the fundamental theory</div>
+								<h3 class="lang" key="color">Color</h3>
+								<div class="desc lang" key="luminosityGray">Luminosity, gray, color scheme and trends in color usage</div>
 							</div>
 						</div>
 					</div>
@@ -168,8 +169,8 @@
 								<lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_vakhlesh.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
-								<h3>Typography</h3>
-								<div class="desc">Learn the fundamental theory behind creating great animated loops</div>
+								<h3 class="lang" key="typography">Typography</h3>
+								<div class="desc lang" key="choosingFontsCreating">Choosing fonts, creating a styling text</div>
 							</div>
 						</div>
 					</div>
@@ -181,8 +182,8 @@
 								<lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_mvwhjrfk.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
-								<h3>UI Component</h3>
-								<div class="desc">Learn the fundamental theory behind creating great animated loops</div>
+								<h3 class="lang" key="uiComponent">UI Component</h3>
+								<div class="desc lang" key="commonFormsBasic">Common forms, basic elements that build up the structure of an interface</div>
 							</div>
 						</div>
 					</div>
@@ -193,8 +194,8 @@
 								<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_go5fexjd.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
-								<h3>Digital Pattern</h3>
-								<div class="desc">Learn the fundamental theory behind creating great animated loops</div>
+								<h3 class="lang" key="digitalPlatforms">Digital Platforms</h3>
+								<div class="desc lang" key="gridBuilderDesigning">Grid builder, designing multi-state screens and device platforms</div>
 							</div>
 						</div>
 					</div>
@@ -205,15 +206,17 @@
 								<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_eeh3nivz.json" background="transparent" speed="1" style="width: 353px; height: 281px;" loop autoplay></lottie-player>
 							</div>
 							<div class="info">
-								<h3>Communicating Design</h3>
-								<div class="desc">Learn the fundamental theory behind creating great animated loops</div>
+								<h3 class="lang" key="communicatingDesign">Communicating Design</h3>
+								<div class="desc lang" key="creatingADesignPortfolio">Creating a design portfolio, finding clients, developer handoff</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="slot-cover text-center wow fadeInUp wHighlight" data-wow-delay=".25s">
-				<a href="javascript:void(0)">+ lots of soft skills and engaging <br>sharing sessions</a>
+				<a href="javascript:void(0)" style="display: flex;justify-content: center;flex-direction: column;">
+					<span class="lang" key="lotsOfSoftSkillsAndEngaging">+ lots of soft skills and engaging</span> <span class="lang" key="sharingSessions">sharing sessions</span>
+				</a>
 			</div>
 
 			<!-- <div class="test mt-3">
@@ -225,7 +228,7 @@
 	<section class="box-intro">
 		<div class="container">
 			<div class="title text-center wow fadeInUp wHighlight" data-wow-delay=".25s">
-				<h2>Who will fit into this journey?</h2>
+				<h2 class="lang" key="whoWillFitIntoThisJourney?">Who will fit into this journey?</h2>
 			</div>
 			<div class="list-intro">
 				<div class="row">
@@ -233,11 +236,11 @@
 						<div class="item-intro">
 							<div class="icon"><img src="images/intro-1.png" class="img-fluid" alt=""></div>
 							<div class="info">
-								<h3>PIT INTERSHIP JOURNEY 2021 IS <br>NOT RIGHT FOR YOU IF...</h3>
+								<h3><span class="lang" key="pitInternShipJourney2021Is">PIT INTERSHIP JOURNEY 2021 IS </span><br><span class="lang" key="notRightForYouIf">NOT RIGHT FOR YOU IF...</span></h3>
 								<div class="desc">
-									<p>You just want to finish a single design – not learn skills to serve you for years</p>
-									<p>You believe you can become a better designer by passively watching videos (newsflash: you will have to do the homework assignments if you want to improve)</p>
-									<p>You’re not a self-motivated learner (this is an online course, after all. I'm not handing out grades)</p>
+									<p class="lang" key="youAreNotReallyPatient">You are not really patient with long-term training routines, you tend to skip small exercises and prefer to start doing difficult things.</p>
+									<p class="lang" key="youAreAPrettyBusyPerson">You're a pretty busy person with different plans and hard to focus time on this program.</p>
+									<p class="lang" key="youAreLessProactive">You are less proactive in your work, tend to avoid interaction and teamwork.</p>
 								</div>
 							</div>
 						</div>
@@ -246,11 +249,11 @@
 						<div class="item-intro">
 							<div class="icon"><img src="images/intro-2.png" class="img-fluid" alt=""></div>
 							<div class="info">
-								<h3>PIT INTERSHIP JOURNEY 2021 IS <br>NOT RIGHT FOR YOU IF...</h3>
+								<h3><span class="lang" key="pitInternShipJourney2021Is">PIT INTERSHIP JOURNEY 2021 IS </span><br><span class="lang" key="rightForYouIf">RIGHT FOR YOU IF...</span></h3>
 								<div class="desc">
-									<p>You just want to finish a single design – not learn skills to serve you for years</p>
-									<p>You believe you can become a better designer by passively watching videos (newsflash: you will have to do the homework assignments if you want to improve)</p>
-									<p>You’re not a self-motivated learner (this is an online course, after all. I'm not handing out grades)</p>
+									<p class="lang" key="youIntendToNavigate">You intend to navigate your profession as a UX/UI design.</p>
+									<p class="lang" key="youBelieveInYourself">You believe in yourself before the new challenges require patience and psychological stress. The ability to learn and hard is a vital factor in you.</p>
+									<p class="lang" key="youAreInterestedInTechnology">You are interested in technology, you really enjoy learning about the latest software, design trends.</p>
 								</div>
 							</div>
 						</div>
@@ -267,19 +270,19 @@
 						<div class="avarta"><img src="images/inter.png" class="img-fluid w-100" alt=""></div>
 						<div class="info">
 							<ul>
-								<li>⭐️ Learn how to come up with original ideas</li>
-								<li>⭐️ Smooth out your character animation</li>
-								<li>⭐️ Speed up your workflow</li>
-								<li>⭐ Improve the fluidity of your animations</li>
+								<li class="lang" key="learnThebasicUxUi">⭐️ Learn the basic UX/UI design process</li>
+								<li class="lang" key="levelUpQuickly">⭐️ Level up quickly</li>
+								<li class="lang" key="beInvolvedInRealProjects">⭐️ Be involved in real projects</li>
+								<li class="lang" key="opportunityToBecome">⭐ Improve the fluidity of your animations</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-7 wow fadeInRight wHighlight" data-wow-delay=".25s">
 					<div class="txt-inter">
-						<h2>Pit Internship Journey <span>2021</span></h2>
-						<div class="desc">
-							Learn the secrets of the workflow of one of the world's best motion designers. Fluid animation, unexpected transitions, superb character animation tips and tricks, and a lot of.
+						<h2><span class="lang" key="pitInternshipJourney">Pit Internship Journey </span><span> 2021</span></h2>
+						<div class="desc lang" key="only6People">
+							"ONLY 6 PEOPLE" will be selected from the registration list. Pit is directed at those who have a serious spirit of learning and expressing their personality. Pit will try to help you get the best start with UX/UI design
 						</div>
 						<div class="scroll-mb">
 							<ul class="head-tabs">
@@ -292,8 +295,8 @@
 										</svg>
 									</div>
 									<div class="info">
-										<span>Level</span>
-										<label>Beginner</label> 
+										<span class="lang" key="level">Level</span>
+										<label class="lang" key="beginner">Beginner</label> 
 									</div>
 								</li>
 								<li class="tab-link" data-tab="tab-2">
@@ -305,8 +308,8 @@
 										</svg>
 									</div>
 									<div class="info">
-										<span>Format</span>
-										<label>Offline_2 months</label>
+										<span class="lang" key="format">Format</span>
+										<label class="lang" key="offline2Months">Offline 2 months</label>
 									</div>
 								</li>
 								<li class="tab-link" data-tab="tab-3">
@@ -318,15 +321,15 @@
 
 									</div>
 									<div class="info">
-										<span>Required </span>
-										<label>Laptop</label>
+										<span class="lang" key="required">Required </span>
+										<label class="lang" key="laptop">Laptop</label>
 									</div>
 								</li>
 							</ul>
 						</div>
 						<div class="btn-start text-center">
 							<!-- <a href="" class="hver-inter"> <span></span></a>  -->
-							<a href="form-pit.php" id="btn" class="link-inter"><label>Start the Journey</label><span></span></a>
+							<a href="form-pit.php" id="btn" class="link-inter"><label class="lang" key="startTheJourney">Start the Journey</label><span></span></a>
 						</div>
 					</div> 
 				</div>
@@ -338,7 +341,7 @@
 <script type="text/javascript" src="https://kenh14cdn.com/2020/9/8/Magazine/eMag-Dutch20200908060511/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/ScrollMagic.js"></script>  
 <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/animation.gsap.min.js"></script>  
-<script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/debug.addIndicators.js"></script>  
+<script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/debug.addIndicators.js"></script>
 <script>
 	
 	var rect = $('.box-banner')[0].getBoundingClientRect();
