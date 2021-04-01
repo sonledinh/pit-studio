@@ -40,7 +40,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-sm-6">
-						<div class="txt text-right">Pit Internship Journey 2021</div>
+						<div class="txt text-right lang" key="pitInternshipJourney2021">Pit Internship Journey 2021</div>
 					</div>
 				</div>
 			</div>
@@ -66,5 +66,6 @@
 <!-- <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/animation.gsap.min.js"></script>  -->
 <!-- <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/debug.addIndicators.js"></script>  -->
 <script type="text/javascript" src="js/private.js"></script> 
+<script type="text/javascript" src="js/lang.js"></script>  
 </body>
 </html>  
