@@ -31,7 +31,7 @@
 		 		</div>
                 <!-- <form action="result.php" method="post"> -->
     		 		<div class="list-form">
-    		 			<div class="cb-form-group">
+    		 			<div class="cb-form-group" id="element-information">
     		 				<div class="title-form wow fadeInUp wHighlight" data-wow-delay=".25s"><p><img src="images/t-form-1.svg" class="img-fluid" alt=""><label key="personalInformation" class="lang">Personal information</label></p></div>
                             <div class="cb-input cb-input_light wow fadeInUp wHighlight" data-wow-delay=".25s">
                                 <div class="cb-input_light-box">
@@ -63,7 +63,7 @@
                                 <div class="cb-input_light-message"></div>
                             </div>
                         </div>
-    		 			<div class="cb-form-group">
+    		 			<div class="cb-form-group" id="element-contact">
     		 				<div class="title-form wow fadeInUp wHighlight" data-wow-delay=".25s"><p><img src="images/t-form-2.svg" class="img-fluid" alt=""><label class="lang" key="contactInformation">Contact information</label></p></div>
                             <div class="cb-input cb-input_light wow fadeInUp wHighlight" data-wow-delay=".25s">
                                 <div class="cb-input_light-box">

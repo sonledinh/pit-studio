@@ -274,8 +274,8 @@
 							<div class="info">
 								<h3><span class="lang" key="pitInternShipJourney2021Is">PIT INTERSHIP JOURNEY 2021 IS </span><br><span class="lang" key="rightForYouIf">RIGHT FOR YOU IF...</span></h3>
 								<div class="desc">
-									<p class="lang" key="youIntendToNavigate">You intend to navigate your profession as a UX/UI design.</p>
-									<p class="lang" key="youBelieveInYourself">You believe in yourself before the new challenges require patience and psychological stress. The ability to learn and hard is a vital factor in you.</p>
+									<p class="lang" key="youIntendToNavigate">You orient your career according to UX / UI design.</p>
+									<p class="lang" key="youBelieveInYourself">You believe in yourself in the face of new challenges that require patience and a sense of responsibility. Self-study ability and hard work are prominent factors in you.</p>
 									<p class="lang" key="youAreInterestedInTechnology">You are interested in technology, you really enjoy learning about the latest software, design trends.</p>
 								</div>
 							</div>
