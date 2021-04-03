@@ -46,7 +46,7 @@
                                     <div class="cb-input_light-line"></div>
                                 </div>
                                 <div class="cb-input_light-message"></div>
-                                <div class="rqYoB lang" key="yearOfBirthNotFormat">Seem your year of birth is not a right number (02/01/2000)</div>
+                                <div class="rqYoB lang" key="yearOfBirthNotFormat">Seem your year of birth is not a right number</div>
                             </div>
                             <div class="cb-input cb-input_light wow fadeInUp wHighlight" data-wow-delay=".25s">
                                 <div class="cb-input_light-box">

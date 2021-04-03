@@ -6,7 +6,7 @@ var validate = {
 
 function validateYearOfBirth (yearOfBirth) {
     if (!yearOfBirth) return
-    var pattern =/^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/;
+    var pattern =/^([0-9]{2})$/;
     if (pattern.test(yearOfBirth)) {
         $('.rqYoB').css('display', 'none')
         Object.assign(validate, {yearOfBirth: false})
