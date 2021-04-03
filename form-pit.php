@@ -32,7 +32,7 @@
                 <!-- <form action="result.php" method="post"> -->
     		 		<div class="list-form">
     		 			<div class="cb-form-group">
-    		 				<div class="title-form wow fadeInUp wHighlight" data-wow-delay=".25s"><p><img src="images/t-form-1.svg" class="img-fluid" alt=""><span key="personalInformation" class="lang">Personal information</span></p></div>
+    		 				<div class="title-form wow fadeInUp wHighlight" data-wow-delay=".25s"><p><img src="images/t-form-1.svg" class="img-fluid" alt=""><label key="personalInformation" class="lang">Personal information</label></p></div>
                             <div class="cb-input cb-input_light wow fadeInUp wHighlight" data-wow-delay=".25s">
                                 <div class="cb-input_light-box">
                                     <input type="text" class="lang" id="yourName" data-translate="yourName" placeholder="Your name"/>
@@ -43,7 +43,7 @@
                             <div class="cb-input cb-input_light wow fadeInUp wHighlight" data-wow-delay=".25s">
                                 <div class="cb-input_light-box"> 
                                     <input type="text" class="lang" id="yearOfBirth" data-translate="yearOfBirth" placeholder="Year of Birth"/>
-                                    <div class="cb-input_light-line"></div>
+                                    <div class="cb-input_light-line line-bird"></div>
                                 </div>
                                 <div class="cb-input_light-message"></div>
                                 <div class="rqYoB lang" key="yearOfBirthNotFormat">Seem your year of birth is not a right number</div>
@@ -64,11 +64,11 @@
                             </div>
                         </div>
     		 			<div class="cb-form-group">
-    		 				<div class="title-form wow fadeInUp wHighlight" data-wow-delay=".25s"><p><img src="images/t-form-2.svg" class="img-fluid" alt=""><span class="lang" key="contactInformation">Contact information</span></p></div>
+    		 				<div class="title-form wow fadeInUp wHighlight" data-wow-delay=".25s"><p><img src="images/t-form-2.svg" class="img-fluid" alt=""><label class="lang" key="contactInformation">Contact information</label></p></div>
                             <div class="cb-input cb-input_light wow fadeInUp wHighlight" data-wow-delay=".25s">
                                 <div class="cb-input_light-box">
                                     <input type="text" class="lang" id="yourEmail" data-translate="yourEmail" placeholder="Your email"/>
-                                    <div class="cb-input_light-line"></div>
+                                    <div class="cb-input_light-line line-mail"></div>
                                 </div>
                                 <div class="cb-input_light-message"></div>
                                 <div class="rqEmail lang" key="yourEmailNotFormat">Seem your email is not correct format</div>
@@ -76,7 +76,7 @@
                             <div class="cb-input cb-input_light wow fadeInUp wHighlight" data-wow-delay=".25s">
                                 <div class="cb-input_light-box">
                                     <input type="text" class="lang" id="yourPhoneNumber" data-translate="yourPhoneNumber" placeholder="Your Phone number"/>
-                                    <div class="cb-input_light-line"></div>
+                                    <div class="cb-input_light-line line-phone"></div>
                                 </div>
                                 <div class="cb-input_light-message"></div>
                                 <div class="rqPhone lang" key="yourPhoneNotFormat">Seem your phone number is not correct format</div>
@@ -90,7 +90,7 @@
                             </div>
                         </div>
     		 			<div class="cb-form-group">
-    		 				<div class="title-form wow fadeInUp wHighlight" data-wow-delay=".25s"><p><img src="images/t-form-3.svg" class="img-fluid" alt=""><span class="lang" key="yourCreation">Your creation</span></p> <span class="lang" key="summarizeAnyOf">Summarize any of your best design experiences here</span></div>
+    		 				<div class="title-form wow fadeInUp wHighlight" data-wow-delay=".25s"><p><img src="images/t-form-3.svg" class="img-fluid" alt=""><label class="lang" key="yourCreation">Your creation</label></p> <span class="lang" key="summarizeAnyOf">Summarize any of your best design experiences here</span></div>
                             <div class="cb-input cb-input_light wow fadeInUp wHighlight" data-wow-delay=".25s">
                                 <div class="cb-input_light-box">
                                     <input type="text" class="lang" id="yourPortfolioLink" data-translate="yourPortfolioLink" placeholder="Portfolio Link"/>
@@ -114,7 +114,7 @@
                             </div> -->
                         </div>
     		 			<div class="cb-form-group">
-    		 				<div class="title-form wow fadeInUp wHighlight" data-wow-delay=".25s"><p><img src="images/t-form-4.svg" class="img-fluid" alt=""><span class="lang" key="doYouHaveAnyMessages">Do you have a message to Pit?</span></p></span></div>
+    		 				<div class="title-form wow fadeInUp wHighlight" data-wow-delay=".25s"><p><img src="images/t-form-4.svg" class="img-fluid" alt=""><label class="lang" key="doYouHaveAnyMessages">Do you have a message to Pit?</label></p></span></div>
                             <div class="cb-input cb-input_light wow fadeInUp wHighlight" data-wow-delay=".25s">
                                 <div class="cb-input_light-box">
                                     <textarea name="" cols="30" rows="10" class="lang" id="weAreReadyToListen" data-translate="weAreReadyToListen" placeholder="We are ready to listen to any questions you may have (optional)"></textarea>

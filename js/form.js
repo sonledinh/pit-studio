@@ -8,21 +8,25 @@ function validateYearOfBirth (yearOfBirth) {
     if (!yearOfBirth) return
     var pattern =/^([0-9]{2})$/;
     if (pattern.test(yearOfBirth)) {
-        $('.rqYoB').css('display', 'none')
+        $('.rqYoB').css('display', 'none');
+        $('.line-bird').addClass('line-red');
         Object.assign(validate, {yearOfBirth: false})
     } else {
-        $('.rqYoB').css('display', 'block')
+        $('.rqYoB').css('display', 'block');
+        $('.line-bird').removeClass('line-red');
         Object.assign(validate, {yearOfBirth: true})
-    }
+    } 
 }
 
 function validateYourEmail (yourEmail) {
     if (!yourEmail) return
     if (!yourEmail.includes('@')) {
         $('.rqEmail').css('display', 'block')
+        $('.line-mail').addClass('line-red')
         Object.assign(validate, {yourEmail: true})
     } else {
         $('.rqEmail').css('display', 'none')
+        $('.line-mail').removeClass('line-red')
         Object.assign(validate, {yourEmail: false})
     }
 }
@@ -32,9 +36,11 @@ function validatePhoneNumber(p) {
     const isphone = /^(1\s|1|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{4})$/.test(p);
     if (!isphone) {
         $('.rqPhone').css('display', 'block')
+        $('.line-phone').addClass('line-red')
         Object.assign(validate, {yourPhoneNumber: true})
     } else {
         $('.rqPhone').css('display', 'none')
+        $('.line-phone').removeClass('line-red')
         Object.assign(validate, {yourPhoneNumber: false})
     }
   }

@@ -222,6 +222,9 @@
         top: -3px;
         position: relative;
     }
+    .tree {
+        display: none;
+    }
 }
 @media (max-width: 575px) {
     .fter-top .txt.text-right {
