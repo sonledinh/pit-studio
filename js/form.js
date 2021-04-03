@@ -88,14 +88,14 @@ $(document).ready(() => {
         const weAreReadyToListen = $('#weAreReadyToListen').val()
     
         const asyncValidate = async () => {
-            await validateYearOfBirth(yearOfBirth)
+            // await validateYearOfBirth(yearOfBirth)
             await validateYourEmail(yourEmail)
             await validatePhoneNumber(yourPhoneNumber)
         }
         asyncValidate()
 
         if (
-            !yourName|| !yearOfBirth|| !yourSchool|| !yourEmail|| !yourPhoneNumber || !yourFacebookLink
+            !yourName|| !yourSchool|| !yourEmail|| !yourPhoneNumber || !yourFacebookLink
             || !yourPortfolioLink || validate['yearOfBirth'] || validate['yourEmail'] || validate['yourPhoneNumber']
         ) {
             return
