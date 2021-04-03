@@ -6,15 +6,18 @@ var validate = {
 
 function validateYearOfBirth (yearOfBirth) {
     if (!yearOfBirth) return
-    var pattern =/^([0-9]{2})$/;
+    var pattern =/^([0-9]{4})$/;
     if (pattern.test(yearOfBirth)) {
         $('.rqYoB').css('display', 'none');
-        $('.line-bird').addClass('line-red');
+        $('.line-bird').removeClass('line-red');
         Object.assign(validate, {yearOfBirth: false})
     } else {
         $('.rqYoB').css('display', 'block');
-        $('.line-bird').removeClass('line-red');
+        $('.line-bird').addClass('line-red');
         Object.assign(validate, {yearOfBirth: true})
+        $('html, body').animate({
+            scrollTop: $("#element-information").offset().top
+        }, 1000);
     } 
 }
 
@@ -24,6 +27,9 @@ function validateYourEmail (yourEmail) {
         $('.rqEmail').css('display', 'block')
         $('.line-mail').addClass('line-red')
         Object.assign(validate, {yourEmail: true})
+        $('html, body').animate({
+            scrollTop: $("#element-information").offset().top
+        }, 1000);
     } else {
         $('.rqEmail').css('display', 'none')
         $('.line-mail').removeClass('line-red')
@@ -38,6 +44,9 @@ function validatePhoneNumber(p) {
         $('.rqPhone').css('display', 'block')
         $('.line-phone').addClass('line-red')
         Object.assign(validate, {yourPhoneNumber: true})
+        $('html, body').animate({
+            scrollTop: $("#element-information").offset().top
+        }, 1000);
     } else {
         $('.rqPhone').css('display', 'none')
         $('.line-phone').removeClass('line-red')
@@ -50,15 +59,14 @@ $(document).keypress(function(){
     const yourName  =  $('#yourName').val()
     const yearOfBirth  =  $('#yearOfBirth').val()
     const yourSchool  =  $('#yourSchool').val()
-    const designCoursesEach  =  $('#designCoursesEach').val()
     const yourEmail  =  $('#yourEmail').val()
     const yourPhoneNumber  =  $('#yourPhoneNumber').val()
     const yourFacebookLink = $('#yourFacebookLink').val()
     const yourPortfolioLink = $('#yourPortfolioLink').val()
-    const weAreReadyToListen = $('#weAreReadyToListen').val()
+
     if (
-        yourName || yearOfBirth || yourSchool || designCoursesEach || yourEmail
-        || yourPhoneNumber || yourFacebookLink || yourPortfolioLink || weAreReadyToListen
+        yourName && yearOfBirth && yourSchool && yourEmail
+        && yourPhoneNumber && yourFacebookLink && yourPortfolioLink
     ) {
         $('#submitYourProfile').css('color', '#11AF88')
         $('.btn_not_color').css('display', 'none')
