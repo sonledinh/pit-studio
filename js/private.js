@@ -41,9 +41,10 @@ $(window).scroll(function(event){
    var st = $(this).scrollTop();
    if (st > lastScrollTop){
       $('.header-top').addClass('up-menu');
-   } else {
+   } 
+   if (st <= lastScrollTop){
       $('.header-top').removeClass('up-menu');
-   }
+   } 
    lastScrollTop = st;
 });
 
@@ -53,6 +54,7 @@ $(window).bind('scroll', function() {
      }
      else {
          $('.header-top').removeClass('fixed');
+         $('.header-top').removeClass('up-menu');
      }
 });
 

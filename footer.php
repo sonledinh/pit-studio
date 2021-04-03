@@ -58,15 +58,10 @@
 
 <!--Link js--> 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script type="text/javascript" src="http://tpl.gco.vn/sukienthanh/js/wow.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://kenh14cdn.com/2020/9/8/Magazine/eMag-Dutch20200908060511/js/TweenMax.min.js"></script> 
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>  -->
-<!-- <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/ScrollMagic.js"></script>  -->
-<!-- <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/animation.gsap.min.js"></script>  -->
-<!-- <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/debug.addIndicators.js"></script>  -->
 <script type="text/javascript" src="js/private.js"></script> 
 <script type="text/javascript" src="js/lang.js"></script>  
 <script type="text/javascript" src="js/form.js"></script>  
 </body>
-</html>  
+</html>   

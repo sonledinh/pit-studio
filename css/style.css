@@ -635,7 +635,7 @@ html.un-hidd {
 }
 .box-banner .img-bn {
   position: absolute;
-  bottom: 0;
+  top: 0;
   z-index: 2;
   right: 0;
 }

@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <title>PIT STUDIO</title>
     <!--link css-->
-    <link rel="stylesheet" type="text/css" title="" href="http://tpl.gco.vn/sukienthanh/css/animate.css">
+    <link rel="stylesheet" type="text/css" title="" href="css/animate.css">
     <link rel="stylesheet" type="text/css" title="" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" title="" href="css/slick.min.css">
     <link rel="stylesheet" type="text/css" title="" href="css/slick-theme.min.css">

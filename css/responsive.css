@@ -221,6 +221,7 @@
     .item-discover .avarta lottie-player {
         top: -3px;
         position: relative;
+        height: auto !important;
     }
     .tree {
         display: none;

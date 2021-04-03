@@ -25,7 +25,7 @@
 <main class="scroll-page">
 	<section class="box-banner">
 		<div class="avarta">
-			<img src="images/bn-mobile.png" class="img-fluid bn-mobile" alt="" style="display: none;">
+			<img src="images/bn-mobile.jpg" class="img-fluid bn-mobile" alt="" style="display: none;">
 			<img src="images/bn-main.png" class="img-fluid img-main" alt="">
 			<img src="images/bn-1.png" class="img-fluid img-bn img-bn-1" alt="">
 			<img src="images/bn-2.png" class="img-fluid img-bn img-bn-2" alt="">
@@ -361,10 +361,10 @@
 	</section>
 </main>
 
-<script type="text/javascript" src="https://kenh14cdn.com/2020/9/8/Magazine/eMag-Dutch20200908060511/js/TweenMax.min.js"></script>
-<script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/ScrollMagic.js"></script>  
-<script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/animation.gsap.min.js"></script>  
-<script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/debug.addIndicators.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic.js"></script>  
+<script type="text/javascript" src="js/animation.gsap.min.js"></script>  
+<script type="text/javascript" src="js/debug.addIndicators.js"></script>
 <script>
 	
 	var rect = $('.box-banner')[0].getBoundingClientRect();
