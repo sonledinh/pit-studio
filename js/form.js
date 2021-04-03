@@ -92,46 +92,46 @@ $(document).ready(() => {
             await validateYourEmail(yourEmail)
             await validatePhoneNumber(yourPhoneNumber)
         }
-        asyncValidate()
-
-        if (
-            !yourName|| !yourSchool|| !yourEmail|| !yourPhoneNumber || !yourFacebookLink
-            || !yourPortfolioLink || validate['yearOfBirth'] || validate['yourEmail'] || validate['yourPhoneNumber']
-        ) {
-            return
-        }
-        const baseURL = 'https://script.google.com/macros/s/AKfycbykprRWX7fqdiq5YpWfmUNmNG0s8OZ-9XQOV9V-rfuPKyMZZamIB0kLdpY2aH7JgTZbrA/exec'
-        const payload = {
-            your_name: yourName,
-            your_date_of_birth: yearOfBirth,
-            your_school: yourSchool,
-            design_courses_each: designCoursesEach,
-            your_email: yourEmail,
-            your_phone_number: yourPhoneNumber,
-            your_facebook_link: yourFacebookLink,
-            your_portfolio_link: yourPortfolioLink,
-            pit_ready_to_listen: weAreReadyToListen,
-        }
-    
-        $.ajax({
-            type : 'GET', 
-            url : baseURL,
-            dataType:'json',
-            crossDomain : true,
-            data : payload,
-            success:function(data) {
-                if(data == 'false') {
-                    alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
-                }else{
-                    alert('Đã thêm dữ liệu vào Form');
-                }
-            },
-            error: function(err) {
-                console.log('err', err);
+        asyncValidate().then(res => {
+            if (
+                !yourName|| !yourSchool|| !yourEmail|| !yourPhoneNumber || !yourFacebookLink
+                || !yourPortfolioLink || validate['yearOfBirth'] || validate['yourEmail'] || validate['yourPhoneNumber']
+            ) {
+                return
             }
+            const baseURL = 'https://script.google.com/macros/s/AKfycbykprRWX7fqdiq5YpWfmUNmNG0s8OZ-9XQOV9V-rfuPKyMZZamIB0kLdpY2aH7JgTZbrA/exec'
+            const payload = {
+                your_name: yourName,
+                your_date_of_birth: yearOfBirth,
+                your_school: yourSchool,
+                design_courses_each: designCoursesEach,
+                your_email: yourEmail,
+                your_phone_number: yourPhoneNumber,
+                your_facebook_link: yourFacebookLink,
+                your_portfolio_link: yourPortfolioLink,
+                pit_ready_to_listen: weAreReadyToListen,
+            }
+            $('#loading-submit').css('display', 'block')
+            $.ajax({
+                type : 'GET', 
+                url : baseURL,
+                dataType:'json',
+                crossDomain : true,
+                data : payload,
+                success:function(data) {
+                    if(data == 'false') {
+                        alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
+                    }else{
+                        alert('Đã thêm dữ liệu vào Form');
+                    }
+                },
+                error: function(err) {
+                    console.log('err', err);
+                }
+            })
+            setTimeout(() => {
+                window.location.href = 'result.php';
+            }, 3000)
         })
-        setTimeout(() => {
-            window.location.href = 'result.php';
-        }, 3000)
     })
 })

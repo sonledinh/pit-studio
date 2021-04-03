@@ -126,7 +126,7 @@
 										<span class="lang" key="fullTimeOrPartTime">Full time (priority)/ Part time</span>
 									</li>
 									<li>
-										<label class="lang" key="Address">🏛 Address:</label>
+										<label class="lang" key="address">🏛 Address:</label>
 										<span class="lang" key="location">Roman Plaza Tower, To Huu Street, Ha Dong, Ha Noi</span>
 									</li>
 								</ul>
