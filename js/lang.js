@@ -67,8 +67,9 @@ var languages = {
         "contactInformation": "Contact information",
         "yourEmail": "Your email",
         "yourPhoneNumber": "Your phone number",
-        "yourfacebookLink": "Your Facebook link",
+        "yourFacebookLink": "Your Facebook link",
         "orBehanceLink": "Or Behance link",
+        "yourPortfolioLink": "Portfolio Link",
         "yourCreation": "Your creation",
         "summarizeAnyOf": "Summarize any of your best design experiences here",
         "yourPortfolioLink": "Your portfolio link",
@@ -79,7 +80,10 @@ var languages = {
         "getBackTo": "lại với bạn trong thời gian sớm nhất!",
         "thankYouFor": "Thank you for your registration, we will",
         "getBackTo": "get back to you as soon as possible!",
-        "productBy": "See our work"
+        "productBy": "See our work",
+        "yearOfBirthNotFormat": "Seem your year of birth is not a right number (02/01/2000)",
+        "yourEmailNotFormat": "Seem your email is not correct format",
+        "yourPhoneNotFormat": "Seem your phone number is not correct format",
     },
     'vi': {
         'welcomeToPtiIntern' : 'Khám phá hành trình thực tập 2021',
@@ -149,8 +153,9 @@ var languages = {
         "contactInformation": "Thông tin liên hệ",
         "yourEmail": "Địa chỉ email",
         "yourPhoneNumber": "Số điện thoại",
-        "yourfacebookLink": "Đường dẫn Facebook",
+        "yourFacebookLink": "Đường dẫn Facebook",
         "orBehanceLink": "Or Behance link",
+        "yourPortfolioLink": "Đường dẫn sản phẩm của bạn",
         "yourCreation": "Thiết kế của bạn",
         "summarizeAnyOf": "Tổng hợp bất cứ bản thiết kế nào của bản thân mà bạn cảm thấy nó thú vị",
         "yourPortfolioLink": "Đường dẫn sản phẩm của bạn",
@@ -159,15 +164,32 @@ var languages = {
         "submitYourProfile": "Gửi hồ sơ",
         "thankYouFor": "Cảm ơn bạn đã đăng ký, chúng tôi sẽ liên hệ",
         "getBackTo": "lại với bạn trong thời gian sớm nhất!",
-        "productBy": "Sản phẩm của Pit"
+        "productBy": "Sản phẩm của Pit",
+        "yearOfBirthNotFormat": "Có vẻ đây không phải là năm sinh (02/01/2000)",
+        "yourEmailNotFormat": "Có vẻ đây không phải là một địa chỉ email",
+        "yourPhoneNotFormat": "Có vẻ đây không phải là một số điện thoại",
     }
 }
 
 $(document).ready(function() {
+    
     // The default language is English
     var lang = getCookie('lang') || 'en-US';
+    if (lang === 'en-US') {
+      $('#en-US').addClass('active')
+      $('#vi').removeClass('active')
+      $('.translate ul').removeClass('active')
+    } else {
+      $('#vi').addClass('active')
+      $('#en-US').removeClass('active')
+      $('.translate ul').addClass('active')
+    }
     $(".lang").each(function(index, element) {
-      $(this).text(languages[lang][$(this).attr("key")]);
+      if ($(this).is( "textarea" ) || $(this).is( "input" )) {
+        $(this).attr('placeholder',languages[lang][$(this).data("translate")])
+    } else {
+        $(this).text(languages[lang][$(this).attr("key")]);
+    }
     });
   });
 

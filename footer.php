@@ -67,5 +67,6 @@
 <!-- <script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/emag-oppo-120210208022725/js/debug.addIndicators.js"></script>  -->
 <script type="text/javascript" src="js/private.js"></script> 
 <script type="text/javascript" src="js/lang.js"></script>  
+<script type="text/javascript" src="js/form.js"></script>  
 </body>
 </html>  
